@@ -1,0 +1,1 @@
+{"text": "która godzina", "intent": {"name": "GetTime", "confidence": 1.0}, "entities": [], "raw_text": "która godzina", "tokens": ["która", "godzina"], "raw_tokens": ["która", "godzina"], "slots": {}, "intents": [], "recognize_seconds": 0.00021123886108398438}

@@ -1,0 +1,1 @@
+{"text": "czy brama garażowa jest otwarta", "intent": {"name": "GetGarageState", "confidence": 1.0}, "entities": [], "raw_text": "czy brama garażowa jest otwarta", "tokens": ["czy", "brama", "garażowa", "jest", "otwarta"], "raw_tokens": ["czy", "brama", "garażowa", "jest", "otwarta"], "slots": {}, "intents": [], "recognize_seconds": 0.00021982192993164062}

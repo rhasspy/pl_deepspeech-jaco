@@ -1,0 +1,1 @@
+{"text": "czy drzwi garażu są zamknięte", "intent": {"name": "GetGarageState", "confidence": 1.0}, "entities": [], "raw_text": "czy drzwi garażu są zamknięte", "tokens": ["czy", "drzwi", "garażu", "są", "zamknięte"], "raw_tokens": ["czy", "drzwi", "garażu", "są", "zamknięte"], "slots": {}, "intents": [], "recognize_seconds": 0.00023293495178222656}
