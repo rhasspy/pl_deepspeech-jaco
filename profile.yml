@@ -1,0 +1,37 @@
+---
+name: "pl_deepspeech-jaco"
+version: "1.0"
+
+language:
+  name: "polish"
+  code: "pl"
+
+speech-to-text:
+  acoustic-model-type: "deepspeech"
+  acoustic-model: !env "${profile_dir}/model/output_graph.pbmm"
+  scorer: !env "${profile_dir}/scorer"
+  base-scorer: !env "${profile_dir}/model/base.scorer"
+  alphabet: !env "${profile_dir}/model/alphabet.txt"
+  phoneme-pronunciations: false
+
+training:
+  acoustic-model-type: "deepspeech"
+  large-files:
+    - !env "${profile_dir}/model/base.scorer"
+    - !env "${profile_dir}/model/output_graph.pbmm"
+    - !env "${profile_dir}/model/output_graph.tflite"
+    - !env "${profile_dir}/base_language_model.fst"
+
+platform:
+  - machine:
+      - armv6l
+      - armv7l
+      - arm64
+      - aarch64
+    settings:
+      speech-to-text:
+        acoustic-model: !env "${profile_dir}/model/output_graph.tflite"
+
+text-to-speech:
+  espeak:
+    voice: "pl"
